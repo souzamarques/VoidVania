@@ -17206,6 +17206,10 @@ PrefabInstance:
       propertyPath: runSpeed
       value: 6.5
       objectReference: {fileID: 0}
+    - target: {fileID: 4021109643133952196, guid: 438ce337469fe3cdd9c572292d5e58d0, type: 3}
+      propertyPath: jumpSpeed
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 7001125500470695972, guid: 438ce337469fe3cdd9c572292d5e58d0, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -17257,6 +17261,14 @@ PrefabInstance:
     - target: {fileID: 7001125502080700797, guid: 438ce337469fe3cdd9c572292d5e58d0, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 9140882230184382454, guid: 438ce337469fe3cdd9c572292d5e58d0, type: 3}
+      propertyPath: m_GravityScale
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 9140882230184382454, guid: 438ce337469fe3cdd9c572292d5e58d0, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 438ce337469fe3cdd9c572292d5e58d0, type: 3}
