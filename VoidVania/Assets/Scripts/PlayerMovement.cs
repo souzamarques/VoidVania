@@ -75,7 +75,7 @@ public class PlayerMovement : MonoBehaviour
         rb.velocity = climbVelocity;
         rb.gravityScale = 0f;
 
-        bool playerHasVerticallSpeed = Mathf.Abs(rb.velocity.y) > Mathf.Epsilon;
-        anim.SetBool("isClimbing", playerHasVerticallSpeed);
+        bool playerHasVerticalSpeed = Mathf.Abs(rb.velocity.y) > Mathf.Epsilon;
+        anim.SetBool("isClimbing", playerHasVerticalSpeed);
     }
 }
