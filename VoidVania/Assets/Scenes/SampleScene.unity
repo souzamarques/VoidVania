@@ -20032,18 +20032,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4021109643133952196, guid: 438ce337469fe3cdd9c572292d5e58d0, type: 3}
-      propertyPath: runSpeed
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 4021109643133952196, guid: 438ce337469fe3cdd9c572292d5e58d0, type: 3}
-      propertyPath: jumpSpeed
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 4568647509680688259, guid: 438ce337469fe3cdd9c572292d5e58d0, type: 3}
-      propertyPath: m_Material
-      value: 
-      objectReference: {fileID: 6200000, guid: 2cccf46fc91a5aad5b7e0ff4d8e9acb1, type: 2}
     - target: {fileID: 7001125502080700736, guid: 438ce337469fe3cdd9c572292d5e58d0, type: 3}
       propertyPath: m_RootOrder
       value: 2
