@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
     BoxCollider2D boxCollider;
 
     float gravityScale;
+    bool isAlive = true;
     [SerializeField] float runSpeed = 7f;
     [SerializeField] float jumpSpeed = 15f;
     [SerializeField] float climbSpeed = 5f;
@@ -27,18 +28,22 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
+        if(!isAlive) { return; }
         Run();
         FlipSprite();
         ClimbLadder();
+        Die();
     }
 
     void OnMove(InputValue value)
     {
+        if(!isAlive) { return; }
         moveInput = value.Get<Vector2>();
     }
 
     void OnJump(InputValue value)
     {
+        if(!isAlive) { return; }
         if(!boxCollider.IsTouchingLayers(LayerMask.GetMask("Ground"))) { return; }
 
         if(value.isPressed)
@@ -79,5 +84,11 @@ public class PlayerMovement : MonoBehaviour
 
         bool playerHasVerticalSpeed = Mathf.Abs(rb.velocity.y) > Mathf.Epsilon;
         anim.SetBool("isClimbing", playerHasVerticalSpeed);
+    }
+
+    void Die()
+    {
+        if(capCollider.IsTouchingLayers(LayerMask.GetMask("Enemy")))
+            isAlive = false;
     }
 }
