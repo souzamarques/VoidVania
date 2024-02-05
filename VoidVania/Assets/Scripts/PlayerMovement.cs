@@ -13,6 +13,8 @@ public class PlayerMovement : MonoBehaviour
 
     float gravityScale;
     bool isAlive = true;
+
+    [SerializeField] Vector2 deathRecoil = new Vector2(20f, 20f);
     [SerializeField] float runSpeed = 7f;
     [SerializeField] float jumpSpeed = 15f;
     [SerializeField] float climbSpeed = 5f;
@@ -89,6 +91,10 @@ public class PlayerMovement : MonoBehaviour
     void Die()
     {
         if(capCollider.IsTouchingLayers(LayerMask.GetMask("Enemy")))
+        {
             isAlive = false;
+            anim.SetTrigger("Dying");
+            rb.velocity = deathRecoil;
+        }
     }
 }
