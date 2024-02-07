@@ -16,7 +16,7 @@ TagManager:
   - Background
   - Mushroom
   - Enemy
-  - 
+  - Hazard
   - 
   - 
   - 
@@ -49,6 +49,9 @@ TagManager:
     locked: 0
   - name: Climbing
     uniqueID: 899201499
+    locked: 0
+  - name: Hazard
+    uniqueID: 889846891
     locked: 0
   - name: Platforms
     uniqueID: 3758653463
