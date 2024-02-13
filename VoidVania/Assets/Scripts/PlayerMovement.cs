@@ -15,6 +15,9 @@ public class PlayerMovement : MonoBehaviour
     bool isAlive = true;
 
     [SerializeField] Vector2 deathRecoil = new Vector2(20f, 20f);
+    [SerializeField] GameObject bullet;
+    [SerializeField] Transform gun;
+
     [SerializeField] float runSpeed = 7f;
     [SerializeField] float jumpSpeed = 15f;
     [SerializeField] float climbSpeed = 5f;
@@ -35,6 +38,12 @@ public class PlayerMovement : MonoBehaviour
         FlipSprite();
         ClimbLadder();
         Die();
+    }
+
+    void OnFire(InputValue value)
+    {
+        if(!isAlive) { return; }
+        Instantiate(bullet, gun.position, transform.rotation);
     }
 
     void OnMove(InputValue value)
