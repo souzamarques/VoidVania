@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5714531683692867871}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.215, y: -0.134, z: 0}
+  m_LocalPosition: {x: 0.327, y: -0.092, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -223,6 +223,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathRecoil: {x: 20, y: 20}
+  bullet: {fileID: 2163541861176626794, guid: 3914a7ffaa3896e17a5bfb526680dbed, type: 3}
+  gun: {fileID: 1413205308472785746}
   runSpeed: 7
   jumpSpeed: 15
   climbSpeed: 5
