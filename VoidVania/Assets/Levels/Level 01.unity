@@ -19639,7 +19639,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5753554372021962563, guid: a8b46e67a8d033cc4a8082309f9350c6, type: 3}
       propertyPath: orthographic size
-      value: 5
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5753554372021962684, guid: a8b46e67a8d033cc4a8082309f9350c6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -9.48
+      objectReference: {fileID: 0}
+    - target: {fileID: 5753554372021962684, guid: a8b46e67a8d033cc4a8082309f9350c6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.21
       objectReference: {fileID: 0}
     - target: {fileID: 5753554372103629657, guid: a8b46e67a8d033cc4a8082309f9350c6, type: 3}
       propertyPath: m_BoundingShape2D
